@@ -1,0 +1,7 @@
+Disable dnsmasq rebind protection so we can resolv internals through the turtle.
+To get local search domain working on client.
+Edit the following on the turtle:
+/etc/config/dhcp
+    uder "config dnsmasq"
+        option rebind_protection '0'
+        option domain 'xxxx.xxx'
